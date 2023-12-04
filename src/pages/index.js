@@ -1,9 +1,5 @@
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import { useRouter } from 'next/router';
-import { useEffect } from 'react';
-
-const inter = Inter({ subsets: ['latin'] })
+import { useRouter } from "next/router";
+import { useEffect } from "react";
 
 export default function Home() {
   const router = useRouter();
@@ -12,5 +8,5 @@ export default function Home() {
     // Redirect to the /sign-in route
     router.push("/sign-in");
   }, []);
-  return null
+  return null;
 }
